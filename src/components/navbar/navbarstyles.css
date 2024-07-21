@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background-color: #00ADB5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar h2 {
+    color: #393E46;
+    font-weight: bold;
+  }
+  
+  .navbar a {
+    color: #393E46;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  .navbar button {
+    color: #393E46;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+  }

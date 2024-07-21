@@ -1,0 +1,40 @@
+.footer-container {
+    background-color: #00ADB5; /* Adjust this color as needed */
+    padding: 1rem 0;
+    text-align: center;
+    color: white;
+}
+
+.social-icons {
+    margin-bottom: 1rem;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #d1d5db; /* Adjust this color for the hover effect */
+}
+
+.footer-text {
+    font-size: 1rem;
+}
+
+.flex {
+    display: flex;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  
+  .flex-grow {
+    flex: 1;
+  }

@@ -1,0 +1,160 @@
+.details-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.details-card {
+  max-width: 800px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+.details-header {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  padding: 2rem;
+  text-align: center;
+}
+
+.details-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.details-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.details-body {
+  padding: 2rem;
+}
+
+.info-section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 2px solid #fda085;
+  padding-bottom: 0.5rem;
+}
+
+.details-attribute {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.details-attribute strong {
+  font-weight: 600;
+}
+
+.type-list, .ability-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.type-item, .ability-item {
+  background-color: #e0e0e0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.type-item {
+  color: #fff;
+}
+
+.type-item.bug { background-color: #92bc2c; }
+.type-item.dark { background-color: #4f3a2f; }
+.type-item.dragon { background-color: #4037a0; }
+.type-item.electric { background-color: #f2d94e; }
+.type-item.fairy { background-color: #f4a6b8; }
+.type-item.fighting { background-color: #d56723; }
+.type-item.fire { background-color: #f5a6a6; }
+.type-item.flying { background-color: #a2a2f7; }
+.type-item.ghost { background-color: #705898; }
+.type-item.grass { background-color: #9bcc50; }
+.type-item ground { background-color: #f7d02c; }
+.type-item.ice { background-color: #98d8d8; }
+.type-item.normal { background-color: #a8a878; }
+.type-item.poison { background-color: #a040a0; }
+.type-item.psychic { background-color: #f366a2; }
+.type-item.rock { background-color: #b9a037; }
+.type-item.steel { background-color: #b8b8d0; }
+.type-item.water { background-color: #6390f0; }
+
+.stats-container {
+  margin-top: 1rem;
+}
+
+.stat-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.stat-name {
+  width: 150px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.bar-background {
+  flex-grow: 1;
+  height: 1rem;
+  background-color: #e0e0e0;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.bar-fill {
+  height: 100%;
+  background-color: #fda085;
+  border-radius: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Add this to your pokemondetails.css */
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.close-button:hover {
+  background-color: #ff1a1a;
+}
