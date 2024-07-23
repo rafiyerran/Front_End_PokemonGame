@@ -1,6 +1,8 @@
+
 // src/api/pokemonService.ts
 
-import axiosInstance from "../axiosWithConfig";
+import { axiosInstance } from "./axiosWithConfig";
+import { Pokemon } from "./type";
 
 export const getPokemon = async (pokemonName: string): Promise<Pokemon> => {
   try {

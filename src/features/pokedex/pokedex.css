@@ -2,7 +2,7 @@
 
 .pokedex-container {
     padding: 2rem;
-    max-width: 1200px;
+    max-width: 1200px;  
     margin: 0 auto;
     background: linear-gradient(135deg, #f0f4f8, #d1e2f6);
     border-radius: 1rem;
@@ -69,6 +69,10 @@
 }
 
 .pokemon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
     background-color: #ffffff;
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -77,12 +81,56 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
-}
-
-.pokemon-card:hover {
+  }
+  
+  .pokemon-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+  }
+  
+/* Add this to your src/features/pokedex/pokedex.css */
+
+/* Pokémon Name Styling */
+.pokemon-name {
+    font-size: 1.5rem; /* Adjust the font size for better visibility */
+    font-weight: bold; /* Make the font bold */
+    color: #3f51b5; /* Primary color for consistency */
+    text-transform: capitalize; /* Capitalize the first letter */
+    margin-bottom: 0.5rem; /* Space between name and image */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .pokemon-name:hover {
+    color: #1e88e5; /* Change color on hover for interaction */
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* Apply Bounce Animation to Pokémon Image */
+  .pokemon-image {
+    width: 120px; /* Set a standard width for all images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0.75rem; /* Rounded corners for a polished look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .pokemon-image:hover {
+    transform: scale(1.1); /* Slight zoom on hover for interaction */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    animation: bounce 1.3s infinite; /* Apply bounce animation */
+  }
+  
 
 .highlighted-pokemon {
     position: absolute;
@@ -165,8 +213,8 @@
 }
 
 .bar-fill {
-    height: 100%;
-    background-color: #76c7c0;
+    height: 100%;   
+    background-color: #00ffea;
     border-radius: 0.5rem;
     position: absolute;
     top: 0;
@@ -183,21 +231,6 @@
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
-}
-
-.pagination-button {
-    padding: 0.75rem 1.5rem;
-    background-color: #3f51b5;
-    color: #fff;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.pagination-button:hover {
-    background-color: #303f9f;
-    transform: scale(1.05);
 }
 
 .close-button {
@@ -223,3 +256,82 @@
     background-color: #d32f2f;
     transform: scale(1.1);
 }
+
+/* Add this to your src/features/pokedex/pokedex.css */
+
+/* Default styling for the Pokémon sprite */
+.pokemon-sprite {
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pokemon-sprite:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 300px; /* Adjust this value as needed */
+  }
+  
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  
+  .pagination-button {
+    padding: 0.75rem 1.5rem;
+    margin: 8px;
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pagination-button:hover {
+    background-color: #303f9f;
+    transform: scale(1.05);
+}
+  
+  .pagination-button:disabled {
+    background-color: #a3a3a3;
+    cursor: not-allowed;
+  }
+
+  .dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  
+  .dropdown-list li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .dropdown-list li:hover {
+    background-color: #f0f0f0;
+  }

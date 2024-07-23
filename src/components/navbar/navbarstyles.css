@@ -9,19 +9,19 @@
   }
   
   .navbar h2 {
-    color: #393E46;
+    color: #304463;
     font-weight: bold;
   }
   
   .navbar a {
-    color: #393E46;
+    color: #304463;
     font-weight: bold;
     text-decoration: none;
     margin-right: 1rem;
   }
   
   .navbar button {
-    color: #393E46;
+    color: #304463  ;
     font-weight: bold;
     background-color: transparent;
     border: none;

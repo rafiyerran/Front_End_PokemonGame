@@ -28,10 +28,14 @@ export interface PokemonStat {
 
 export interface PokemonSprites {
   front_default: string;
+  front_shiny: string;
+  other: Other 
+  versions: Versions
 }
 
 export interface Pokemon {
-  name: string;
+  id: number;
+  name: string; 
   height: number;
   weight: number;
   base_experience: number;  
@@ -39,4 +43,17 @@ export interface Pokemon {
   types: PokemonType[];
   abilities: PokemonAbility[];
   stats: PokemonStat[];
+}
+
+
+export interface Other {
+  dream_world: DreamWorld
+  home: Home
+  "official-artwork": OfficialArtwork
+  showdown: Showdown
+}
+
+export interface OfficialArtwork {
+  front_default: string
+  front_shiny: string
 }

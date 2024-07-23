@@ -2,7 +2,7 @@
   padding: 2rem;
   display: flex;
   justify-content: center;
-  background-color: #f5f5f5;
+  background-color:   #f5f5f5;
 }
 
 .details-card {
@@ -91,7 +91,7 @@
 .type-item.flying { background-color: #a2a2f7; }
 .type-item.ghost { background-color: #705898; }
 .type-item.grass { background-color: #9bcc50; }
-.type-item ground { background-color: #f7d02c; }
+.type-item.ground { background-color: #f7d02c; }
 .type-item.ice { background-color: #98d8d8; }
 .type-item.normal { background-color: #a8a878; }
 .type-item.poison { background-color: #a040a0; }
@@ -126,7 +126,7 @@
 
 .bar-fill {
   height: 100%;
-  background-color: #fda085;
+  background-color: #3f51b5;
   border-radius: 0.5rem;
 }
 
@@ -157,4 +157,22 @@
 
 .close-button:hover {
   background-color: #ff1a1a;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 300px; /* Adjust this value as needed */
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

@@ -1,6 +1,7 @@
 // src/components/PokemonCard.tsx
 import React, { useState, useEffect } from 'react';
 import { getPokemon } from '../../services/getpokemon/getpokemon';
+import { Pokemon } from '../../services/getpokemon/type';
 
 
 interface PokemonCardProps {
@@ -17,7 +18,7 @@ const PokemonCard: React.FC<PokemonCardProps> = ({ name }) => {
         setPokemon(data);
       } catch (error) {
         console.error('Error fetching Pokémon data:', error);
-      }
+      } 
     };
 
     fetchPokemon();
