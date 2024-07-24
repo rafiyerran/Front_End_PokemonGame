@@ -1,9 +1,18 @@
-import React from 'react'
+// GameMap.tsx
 
-const GameMap = () => {
-  return (
-    <div>Game Map</div>
-  )
-}
+import './gamemap.css';
 
-export default GameMap
+import mapImage from '../../assets/mapRegion1.png'
+
+// Adjust the path as necessary
+
+
+function GameMap () {
+   return (
+      <div className="game-map">
+        <img src={mapImage} alt="Game Map" className="map-image" />
+      </div>
+    );
+};
+
+export default GameMap;

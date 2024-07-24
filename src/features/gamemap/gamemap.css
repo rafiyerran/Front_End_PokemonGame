@@ -1,0 +1,15 @@
+.game-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000;
+    min-height: 1000px; /* Adjust the height as necessary */
+
+     /* Adjust the height as necessary */
+  }
+  
+  .map-image {
+    width: 1200px; /* Optional: ensures the image doesn't overflow */
+    height: auto; /* Optional: ensures the image doesn't overflow */
+  }
+  
